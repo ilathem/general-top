@@ -7,7 +7,7 @@ class Book {
     }
 
     info() {
-        console.log(`${this.title} by ${this.author}, ${this.pages} pages, ${
+        return(`${this.title} by ${this.author}, ${this.pages} pages, ${
             this.isRead ? 'is read' : 'not read yet'
         }.`)
     }
@@ -15,4 +15,4 @@ class Book {
 
 const exampleBook = new Book('The Hobbit', 'J.R.R. Tolkien', '295', false);
 
-exampleBook.info();
+console.log(exampleBook.info());
